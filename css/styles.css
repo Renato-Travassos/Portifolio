@@ -2,20 +2,72 @@
 * {
   margin: 0 auto;
   padding: 0;
-  background-color: black;
+  background-color: #011627;
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 17;
+  font-weight: 30;
   font-style: normal;
 }
 
 nav {
-  justify-content: space-between;
   gap: 14px;
 }
 
 a {
   text-decoration: none;
+  color: #fff;
+}
+
+.card {
+  width: 200px;
+  height: 350px;
+  border: #4A8FE7 0.5px solid;
+  transition: 0.4s;
+  text-align: center;
+  padding: 20px;
+}
+.card:hover {
+  scale: 1.1;
+}
+.card img {
+  margin-top: 2%;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+.card title {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.card h2 {
+  width: 200px;
+  color: #1AFFD5;
+  height: 50px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+content {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2.8px;
+  background-color: #1b8bf9;
+  padding: 15px 50px;
+  border-radius: 5rem;
+  transition: 0.6s cubic-bezier(0.01, 1.69, 0.99, 0.94);
+  display: block;
+  position: static;
+}
+.btn--clicked {
+  transition: 0.6s cubic-bezier(0.01, 1.69, 0.99, 0.94);
+}
+.btn--clicked h2 {
+  overflow: visible;
 }
 
 /*# sourceMappingURL=styles.css.map */
