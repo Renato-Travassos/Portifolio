@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+
 *
  margin: 0 auto 
  padding: 0
@@ -19,32 +20,35 @@ a
  color: variables.$primary-color     
 
 .card 
- width:200px
- height:350px
+ width:300px
+ height:auto
  border: variables.$border-color 0.5px solid
  transition: .4s 
  text-align: center
  padding:20px
+   
  &:hover 
    scale: 1.1
+   
+ &-title   
+  font-size: 1.2rem
+  color: #fff
+   
  img
-  margin-top:2%    
+  margin-top:2%     
   border-radius:50% 
   width:150px
   height:150px
- title   
-  font-size: 1.2rem
-  color: variables.$primary-color
-      
- h2 
+        
+h2 
   width:200px
   color: variables.$secondary-color 
   height:50px 
   overflow: hidden  
   margin: 10px
-content 
- display: inline-flex   
- justify-content: center 
+.content 
+ display: flex
+ justify-content: space-between 
 
 .btn
   color: white
@@ -53,11 +57,24 @@ content
   background-color: #1b8bf9
   padding: 15px 50px
   border-radius: 5rem
-  transition: 0.6s cubic-bezier(0.01, 1.69, 0.99, 0.94)
-  display: block 
-  position: static
-  &--clicked
-    transition: 0.6s cubic-bezier(0.01, 1.69, 0.99, 0.94)
-    h2 
-     overflow: visible   
+  box-shadow: 1px 2.9px 16px rgba(27, 139, 249, 0.4)
+  margin-top: 10px   
+  
 
+.description
+ opacity:0 
+ color: variables.$description
+ height:50px  
+ overflow: hidden
+ max-width:300px
+ transition: .4s      
+
+.tecnologias
+  list-style-type: circle 
+  font-weight: 500px
+  margin: 10px
+  color: variables.$primary-color
+
+@media screen and (max-width: 720px)
+  .content
+    display: inline

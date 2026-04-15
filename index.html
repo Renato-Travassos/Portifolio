@@ -16,36 +16,83 @@
 
     </nav>
     <main >
-       <section>
+       <section class="content">
         
-<div class="card">
-  <img src="OIP.webp" alt="Jogo da Velha">
 
-  <h3 class="card-title">
-    Jogo da Velha
-  </h3>
-  <button class="btn">Ver</button>
-
-  <h2>
-    Um simples jogo feito com HTML + CSS + JS + DOM
-  </h2>
- </div>
 <div class="card">
   <img src="estudante.jpg" alt="Gerenciamento escolar">
 
   <h3 class="card-title">
 Gerenciamento escolar
   </h3>
-  <button class="btn">Ver</button>
+  <button class="btn" onclick="Show(this)">Ver mais</button>
+<div class="description">
+<p>    Sistema de Gestão Escolar
+Desenvolvi um sistema completo para gerenciamento acadêmico, permitindo o cadastro e controle de alunos, professores, turmas, registro de presença e lançamento de notas.</p>
+<h2>Tecnologias</h2>
 
-  <h2>
-       gerenciamento educacional  
-  </h2>
-</div>
- 
+<ul  class="tecnologias">
+  <li>Sqlite</li>
+  <li>Yup</li>
+  <li>C#</li>
+</ul>
+<h3>Link:<a href="#">Gerenciamento Escolar</a></h3>
+  </div>
+
+</div> 
+<div class="card">
+  <img src="OIP.webp" alt="Gerenciamento escolar">
+
+  <h3 class="card-title">
+jogo da velha
+  </h3>
+  <button class="btn" onclick="Show(this)">Ver mais</button>
+<div class="description">
+<p> Apenas um jogo da velha simples</p>
+<h2>Tecnologias</h2>
+
+<ul  class="tecnologias">
+  <li>Html5</li>
+  <li>Css</li>
+  <li>Javascript</li>
+</ul>
+<h3>Link:<a href="#">Gerenciamento Escolar</a></h3>
+  </div>
+
+</div> 
+<div class="card">
+  <img src="estudante.jpg" alt="Gerenciamento escolar">
+
+  <h3 class="card-title">
+Gerenciamento escolar
+  </h3>
+  <button class="btn" onclick="Show(this)">Ver mais</button>
+<div class="description">
+<p>    Sistema de Gestão Escolar
+Desenvolvi um sistema completo para gerenciamento acadêmico, permitindo o cadastro e controle de alunos, professores, turmas, registro de presença e lançamento de notas.</p>
+<h2>Tecnologias</h2>
+
+<ul  class="tecnologias">
+  <li>Sqlite</li>
+  <li>Yup</li>
+  <li>C#</li>
+</ul>
+<h3>Link:<a href="#">Gerenciamento Escolar</a></h3>
+  </div>
+
+</div> 
+
        </section> 
 
     </main>
-
+  
 </body>
+<script>
+function Show(btn) { 
+let  el = btn.nextElementSibling;
+ el.style.height = el.style.height == "inherit" ? "50px" : "inherit";  
+ el.style.opacity=  el.style.opacity==1 ? 0:1;
+}
+
+</script>
 </html>
