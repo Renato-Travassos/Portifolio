@@ -5,20 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
 </head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 <link  rel="stylesheet" href="css/styles.css">
-
-<body>
-    <nav>
-        <a>Projetos</a>
-        <a>Sobre</a>
-
-    </nav>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>   
     <main >
-       <section class="content">
-        
-
+              <h2 class="title">Projetos</h2>
+       <section  >
 <div class="card">
   <img src="estudante.jpg" alt="Gerenciamento escolar">
 
@@ -61,21 +53,22 @@ jogo da velha
 
 </div> 
 <div class="card">
-  <img src="estudante.jpg" alt="Gerenciamento escolar">
+  <img src="file.jpg" alt="Gerenciamento escolar">
 
   <h3 class="card-title">
-Gerenciamento escolar
+Castilho Móveis
   </h3>
   <button class="btn" onclick="Show(this)">Ver mais</button>
 <div class="description">
-<p>    Sistema de Gestão Escolar
-Desenvolvi um sistema completo para gerenciamento acadêmico, permitindo o cadastro e controle de alunos, professores, turmas, registro de presença e lançamento de notas.</p>
+<p>Apresentação da empresa Castilho Móveis</p>
 <h2>Tecnologias</h2>
 
 <ul  class="tecnologias">
-  <li>Sqlite</li>
-  <li>Yup</li>
-  <li>C#</li>
+  <li>Html5</li>
+  <li>Css</li>
+  <li>Jquery</li>
+  <li>Css</li>
+  <li>Javascript</li>
 </ul>
 <h3>Link:<a href="#">Gerenciamento Escolar</a></h3>
   </div>
@@ -83,16 +76,59 @@ Desenvolvi um sistema completo para gerenciamento acadêmico, permitindo o cadas
 </div> 
 
        </section> 
+ 
+ <h2 class="title">Desenvolvedor Junior  </h2><br>
 
+<section style=" width: 70%; box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;padding: 20px;">
+ <div><h2>Front-end</h2>
+        <ul class="tecnologias">
+          <li>TypeScript</li>
+          <li>HTML5</li>
+          <li>CSS</li>
+          <li>Sass</li>
+          <li>ReactJS</li>
+          <li>jQuery</li>
+        </ul>
+</div>
+<div  >
+        <h2>Back-end</h2>
+        <ul class="tecnologias">
+          <li>Node.js</li>
+          <li>MongoDB</li>
+          <li>SQLite</li>
+        </ul>
+      </div>
+
+<div>
+        <h2>Ferramentas</h2>
+        <ul class="tecnologias">
+          <li>Git</li>
+          <li>Postman</li>
+        </ul>
+      </div>
+
+</section>
+<h2 class="title">Rede sociais</h2>
+
+<nav>
+<span><a href="" class="links" ><i class="fa-brands fa-linkedin"> </i>Linkendi</a></span>
+<a href="" class="links" ><i class="fa-brands fa-instagram">  </i>Instagram</a>
+<a href="" class="links" ><i class="fa-solid fa-envelope"></i>Email</a>
+<a href="" class="links" ><i class="fa-brands fa-github"></i>Git</a>
+</nav>
+</span>
+ 
     </main>
   
 </body>
+
+
 <script>
-function Show(btn) { 
-let  el = btn.nextElementSibling;
- el.style.height = el.style.height == "inherit" ? "50px" : "inherit";  
- el.style.opacity=  el.style.opacity==1 ? 0:1;
+function Show(e) {
+ let d= e.nextElementSibling.classList.toggle('selecionado') 
+ d.style.height="300px"
 }
 
 </script>
+
 </html>

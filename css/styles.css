@@ -9,23 +9,38 @@
   font-style: normal;
 }
 
-nav {
-  gap: 14px;
+.title {
+  text-align: center;
+  margin: auto;
+  color: #FFD400;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5%;
 }
 
 a {
   text-decoration: none;
   color: #fff;
+  font-size: 1.5rem;
 }
 
 .card {
-  width: 300px;
-}
-.card {
+  width: 200px;
+  height: 240px;
   border: #4A8FE7 0.5px solid;
   transition: 0.4s;
   text-align: center;
   padding: 20px;
+}
+.card:nth-child(2) {
+  border: #FF36AB 0.5px solid;
+}
+.card:nth-child(3) {
+  border: #1AFFD5 0.5px solid;
 }
 .card:hover {
   scale: 1.1;
@@ -39,19 +54,6 @@ a {
   border-radius: 50%;
   width: 150px;
   height: 150px;
-}
-
-h2 {
-  width: 200px;
-  color: #1AFFD5;
-  height: 50px;
-  overflow: hidden;
-  margin: 10px;
-}
-
-.content {
-  display: flex;
-  justify-content: space-between;
 }
 
 .btn {
@@ -81,10 +83,30 @@ h2 {
   color: #fff;
 }
 
-@media screen and (max-width: 720px) {
-  .content {
-    display: inline;
-  }
+li {
+  color: #fff;
+}
+
+.links {
+  width: 200px;
+  height: 50px;
+  border: 3px solid red;
+}
+
+nav {
+  display: grid;
+  justify-content: center;
+  width: 70%;
+}
+nav:nth-child(1) {
+  background-color: green;
+}
+nav a {
+  margin: 20px;
+}
+
+div h2 {
+  color: #1AFFD5;
 }
 
 /*# sourceMappingURL=styles.css.map */
