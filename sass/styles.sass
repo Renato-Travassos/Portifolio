@@ -66,7 +66,10 @@ a
   border-radius: 5rem
   box-shadow: 1px 2.9px 16px rgba(27, 139, 249, 0.4)
   margin-top: 10px   
-  
+
+div   
+   h2 
+    color: #14D286 
 
 .description
  opacity:0 
@@ -85,20 +88,30 @@ a
 li 
  color: variables.$primary-color   
  
-.links 
- width: 200px
- height:50px
- border: 3px solid red 
+.links  
+  align-items: center
+  text-decoration: none
+  font-size: 20px
+  padding: 16px 24px
+  margin: 12px
+  border-radius: 12px
+  width: 60vw
+  transition: all 0.3s ease
+  
+.links:nth-child(1)  
+  border: 2.5px solid #14D286   
+.links:nth-child(2)  
+  border: 2.5px solid #14BFD2   
+.links:nth-child(3)  
+  border: 2.5px solid #8692a55d      
 nav 
- display: grid 
- justify-content: center
- width: 70%
- &:nth-child(1)
-   background-color: green   
- a 
-  margin: 20px
+ display: grid
+ justify-content: center 
 
- 
-div 
-   h2 
-    color: variables.$secondary-color
+.links i 
+  font-size: 26px
+  width: 32px
+.links:hover 
+  background-color: rgba(255, 255, 255, 0.08)
+  transform: translateX(8px)
+  border-color: rgba(255,255,255,0.2)    
