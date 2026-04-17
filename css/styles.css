@@ -7,6 +7,7 @@
   font-optical-sizing: auto;
   font-weight: 30;
   font-style: normal;
+  text-decoration: none;
 }
 
 .title {
@@ -23,9 +24,12 @@ section {
 }
 
 a {
-  text-decoration: none;
   color: #fff;
   font-size: 1.5rem;
+}
+
+.fa-brands {
+  background-color: transparent;
 }
 
 .card {
@@ -33,8 +37,8 @@ a {
   height: 240px;
   border: #4A8FE7 0.5px solid;
   transition: 0.4s;
-  text-align: center;
   padding: 20px;
+  text-align: center;
 }
 .card:nth-child(2) {
   border: #FF36AB 0.5px solid;
@@ -67,16 +71,16 @@ a {
   margin-top: 10px;
 }
 
+div {
+  text-align: left;
+}
 div h2 {
-  color: #14D286;
+  color: #1AFFD5;
 }
 
 .description {
   opacity: 0;
   color: #FF36AB;
-  height: 50px;
-  overflow: hidden;
-  max-width: 300px;
   transition: 0.4s;
 }
 
@@ -92,8 +96,6 @@ li {
 }
 
 .links {
-  align-items: center;
-  text-decoration: none;
   font-size: 20px;
   padding: 16px 24px;
   margin: 12px;
@@ -128,6 +130,27 @@ nav {
   background-color: rgba(255, 255, 255, 0.08);
   transform: translateX(8px);
   border-color: rgba(255, 255, 255, 0.2);
+}
+
+.selecionado {
+  height: 30%;
+  width: 30%;
+}
+.selecionado .description {
+  opacity: 1;
+}
+
+@media screen and (max-width: 736px) {
+  .selecionado {
+    height: auto;
+    width: 250px;
+  }
+  section {
+    display: inline;
+  }
+  div {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

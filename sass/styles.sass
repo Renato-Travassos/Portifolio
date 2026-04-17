@@ -11,33 +11,36 @@
  font-optical-sizing: auto
  font-weight: 30
  font-style: normal
+ text-decoration: none 
 
 @mixin container 
  display: flex 
  flex-wrap: wrap
  justify-content: space-between   
  margin-top: 5%
-
+ 
 .title 
  text-align: center  
  margin: auto
  color: variables.$title-color
 
 section
- @include container
-    
+  @include container
+
 a
- text-decoration: none 
  color: variables.$primary-color     
  font-size: 1.5rem
+  
 
+.fa-brands
+  background-color: transparent
 .card 
  width:200px
  height:240px
  border: variables.$border-color 0.5px solid
  transition: .4s 
- text-align: center
  padding:20px
+ text-align: center
  &:nth-child(2)
    border: variables.$description 0.5px solid
  &:nth-child(3)
@@ -67,16 +70,14 @@ a
   box-shadow: 1px 2.9px 16px rgba(27, 139, 249, 0.4)
   margin-top: 10px   
 
-div   
+div     
+   text-align: left
    h2 
-    color: #14D286 
+    color: variables.$secondary-color 
 
 .description
  opacity:0 
  color: variables.$description
- height:50px  
- overflow: hidden
- max-width:300px
  transition: .4s      
 
 .tecnologias
@@ -89,8 +90,6 @@ li
  color: variables.$primary-color   
  
 .links  
-  align-items: center
-  text-decoration: none
   font-size: 20px
   padding: 16px 24px
   margin: 12px
@@ -115,3 +114,18 @@ nav
   background-color: rgba(255, 255, 255, 0.08)
   transform: translateX(8px)
   border-color: rgba(255,255,255,0.2)    
+
+.selecionado
+  height: +30%
+  width: +30%
+  .description
+   opacity: 1
+@media screen and (max-width: 736px)   
+ .selecionado
+   height: auto 
+   width: 250px
+ section 
+   display: inline  
+ div 
+   text-align: center      
+  

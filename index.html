@@ -10,14 +10,14 @@
 <body>   
     <main >
               <h2 class="title">Projetos</h2>
-       <section  >
+       <section>
 <div class="card">
   <img src="estudante.jpg" alt="Gerenciamento escolar">
 
   <h3 class="card-title">
 Gerenciamento escolar
   </h3>
-  <button class="btn" onclick="Show(this)">Ver mais</button>
+  <button class="btn" onclick="Show(this)">Ver</button>
 <div class="description">
 <p>    Sistema de Gestão Escolar
 Desenvolvi um sistema completo para gerenciamento acadêmico, permitindo o cadastro e controle de alunos, professores, turmas, registro de presença e lançamento de notas.</p>
@@ -28,7 +28,7 @@ Desenvolvi um sistema completo para gerenciamento acadêmico, permitindo o cadas
   <li>Yup</li>
   <li>C#</li>
 </ul>
-<h3>Link:<a href="#">Gerenciamento Escolar</a></h3>
+<h3>Link<a href="#"></a></h3>
   </div>
 
 </div> 
@@ -38,7 +38,7 @@ Desenvolvi um sistema completo para gerenciamento acadêmico, permitindo o cadas
   <h3 class="card-title">
 jogo da velha
   </h3>
-  <button class="btn" onclick="Show(this)">Ver mais</button>
+  <button class="btn" onclick="Show(this)">Ver</button>
 <div class="description">
 <p> Apenas um jogo da velha simples</p>
 <h2>Tecnologias</h2>
@@ -48,7 +48,7 @@ jogo da velha
   <li>Css</li>
   <li>Javascript</li>
 </ul>
-<h3>Link:<a href="#">Gerenciamento Escolar</a></h3>
+<h3>Link<a href="#"></a></h3>
   </div>
 
 </div> 
@@ -58,7 +58,7 @@ jogo da velha
   <h3 class="card-title">
 Castilho Móveis
   </h3>
-  <button class="btn" onclick="Show(this)">Ver mais</button>
+  <button class="btn" onclick="Show(this)">Ver</button>
 <div class="description">
 <p>Apresentação da empresa Castilho Móveis</p>
 <h2>Tecnologias</h2>
@@ -67,10 +67,9 @@ Castilho Móveis
   <li>Html5</li>
   <li>Css</li>
   <li>Jquery</li>
-  <li>Css</li>
   <li>Javascript</li>
 </ul>
-<h3>Link:<a href="#">Gerenciamento Escolar</a></h3>
+<h3>Link<a href="#"></a></h3>
   </div>
 
 </div> 
@@ -79,7 +78,7 @@ Castilho Móveis
  
  <h2 class="title">Desenvolvedor Junior  </h2><br>
 
-<section style=" width: 70%; box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;padding: 20px;">
+<section>
  <div><h2>Front-end</h2>
         <ul class="tecnologias">
           <li>TypeScript</li>
@@ -142,10 +141,12 @@ Castilho Móveis
 
 <script>
 function Show(e) {
- let d= e.nextElementSibling.classList.toggle('selecionado') 
- d.style.height="300px"
-}
+e.textContent="Ver"  
+const card = e.parentElement;
+card.classList.toggle("selecionado");
+let texto =document.querySelector('.selecionado').children[2]
+texto.textContent="Sair";
+} 
 
 </script>
-
 </html>
