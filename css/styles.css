@@ -2,20 +2,155 @@
 * {
   margin: 0 auto;
   padding: 0;
-  background-color: black;
+  background-color: #011627;
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 17;
+  font-weight: 30;
   font-style: normal;
+  text-decoration: none;
 }
 
-nav {
+.title {
+  text-align: center;
+  margin: auto;
+  color: #FFD400;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 14px;
+  margin-top: 5%;
 }
 
 a {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.fa-brands {
+  background-color: transparent;
+}
+
+.card {
+  width: 200px;
+  height: 240px;
+  border: #4A8FE7 0.5px solid;
+  transition: 0.4s;
+  padding: 20px;
+  text-align: center;
+}
+.card:nth-child(2) {
+  border: #FF36AB 0.5px solid;
+}
+.card:nth-child(3) {
+  border: #1AFFD5 0.5px solid;
+}
+.card:hover {
+  scale: 1.1;
+}
+.card-title {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.card img {
+  margin-top: 2%;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.btn {
+  color: white;
   text-decoration: none;
+  letter-spacing: 2.8px;
+  background-color: #1b8bf9;
+  padding: 15px 50px;
+  border-radius: 5rem;
+  box-shadow: 1px 2.9px 16px rgba(27, 139, 249, 0.4);
+  margin-top: 10px;
+}
+
+div {
+  text-align: left;
+}
+div h2 {
+  color: #1AFFD5;
+}
+
+.description {
+  opacity: 0;
+  color: #FF36AB;
+  transition: 0.4s;
+}
+
+.tecnologias {
+  list-style-type: circle;
+  font-weight: 500px;
+  margin: 10px;
+  color: #fff;
+}
+
+li {
+  color: #fff;
+}
+
+.links {
+  font-size: 20px;
+  padding: 16px 24px;
+  margin: 12px;
+  border-radius: 12px;
+  width: 60vw;
+  transition: all 0.3s ease;
+}
+
+.links:nth-child(1) {
+  border: 2.5px solid #14D286;
+}
+
+.links:nth-child(2) {
+  border: 2.5px solid #14BFD2;
+}
+
+.links:nth-child(3) {
+  border: 2.5px solid rgba(134, 146, 165, 0.3647058824);
+}
+
+nav {
+  display: grid;
+  justify-content: center;
+}
+
+.links i {
+  font-size: 26px;
+  width: 32px;
+}
+
+.links:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  transform: translateX(8px);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.selecionado {
+  height: 30%;
+  width: 30%;
+}
+.selecionado .description {
+  opacity: 1;
+}
+
+@media screen and (max-width: 736px) {
+  .selecionado {
+    height: auto;
+    width: 250px;
+  }
+  section {
+    display: inline;
+  }
+  div {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,20 +1,131 @@
+@use 'variables'
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 
 *
  margin: 0 auto 
  padding: 0
- background-color: black
+ background-color: variables.$bg-color
  font-family: "Nunito", sans-serif
  font-optical-sizing: auto
- font-weight: 17
+ font-weight: 30
  font-style: normal
- 
-nav
- display:flex
- justify-content: space-between   
- gap: 14px
-   
-a
  text-decoration: none 
+
+@mixin container 
+ display: flex 
+ flex-wrap: wrap
+ justify-content: space-between   
+ margin-top: 5%
  
-       
+.title 
+ text-align: center  
+ margin: auto
+ color: variables.$title-color
+
+section
+  @include container
+
+a
+ color: variables.$primary-color     
+ font-size: 1.5rem
+  
+
+.fa-brands
+  background-color: transparent
+.card 
+ width:200px
+ height:240px
+ border: variables.$border-color 0.5px solid
+ transition: .4s 
+ padding:20px
+ text-align: center
+ &:nth-child(2)
+   border: variables.$description 0.5px solid
+ &:nth-child(3)
+   border: variables.$secondary-color 0.5px solid
+
+ &:hover 
+   scale: 1.1
+   
+ &-title   
+  font-size: 1.2rem
+  color: variables.$primary-color
+   
+ img
+  margin-top:2%     
+  border-radius:50% 
+  width:150px
+  height:150px
+        
+ 
+.btn
+  color: white
+  text-decoration: none
+  letter-spacing: 2.8px
+  background-color: #1b8bf9
+  padding: 15px 50px
+  border-radius: 5rem
+  box-shadow: 1px 2.9px 16px rgba(27, 139, 249, 0.4)
+  margin-top: 10px   
+
+div     
+   text-align: left
+   h2 
+    color: variables.$secondary-color 
+
+.description
+ opacity:0 
+ color: variables.$description
+ transition: .4s      
+
+.tecnologias
+  list-style-type: circle 
+  font-weight: 500px
+  margin: 10px
+  color: variables.$primary-color
+  
+li 
+ color: variables.$primary-color   
+ 
+.links  
+  font-size: 20px
+  padding: 16px 24px
+  margin: 12px
+  border-radius: 12px
+  width: 60vw
+  transition: all 0.3s ease
+  
+.links:nth-child(1)  
+  border: 2.5px solid #14D286   
+.links:nth-child(2)  
+  border: 2.5px solid #14BFD2   
+.links:nth-child(3)  
+  border: 2.5px solid #8692a55d      
+nav 
+ display: grid
+ justify-content: center 
+
+.links i 
+  font-size: 26px
+  width: 32px
+.links:hover 
+  background-color: rgba(255, 255, 255, 0.08)
+  transform: translateX(8px)
+  border-color: rgba(255,255,255,0.2)    
+
+.selecionado
+  height: +30%
+  width: +30%
+  .description
+   opacity: 1
+@media screen and (max-width: 736px)   
+ .selecionado
+   height: auto 
+   width: 250px
+ section 
+   display: inline  
+ div 
+   text-align: center      
+  

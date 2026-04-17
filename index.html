@@ -5,14 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
 </head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 <link  rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>   
+    <main >
+              <h2 class="title">Projetos</h2>
+       <section>
+<div class="card">
+  <img src="estudante.jpg" alt="Gerenciamento escolar">
 
-<body>
-    <main>
+  <h3 class="card-title">
+Gerenciamento escolar
+  </h3>
+  <button class="btn" onclick="Show(this)">Ver</button>
+<div class="description">
+<p>    Sistema de Gestão Escolar
+Desenvolvi um sistema completo para gerenciamento acadêmico, permitindo o cadastro e controle de alunos, professores, turmas, registro de presença e lançamento de notas.</p>
+<h2>Tecnologias</h2>
 
+<ul  class="tecnologias">
+  <li>Sqlite</li>
+  <li>Yup</li>
+  <li>C#</li>
+</ul>
+<h3>Link<a href="#"></a></h3>
+  </div>
+
+</div> 
+<div class="card">
+  <img src="OIP.webp" alt="Gerenciamento escolar">
+
+  <h3 class="card-title">
+jogo da velha
+  </h3>
+  <button class="btn" onclick="Show(this)">Ver</button>
+<div class="description">
+<p> Apenas um jogo da velha simples</p>
+<h2>Tecnologias</h2>
+
+<ul  class="tecnologias">
+  <li>Html5</li>
+  <li>Css</li>
+  <li>Javascript</li>
+</ul>
+<h3>Link<a href="#"></a></h3>
+  </div>
+
+</div> 
+<div class="card">
+  <img src="file.jpg" alt="Gerenciamento escolar">
+
+  <h3 class="card-title">
+Castilho Móveis
+  </h3>
+  <button class="btn" onclick="Show(this)">Ver</button>
+<div class="description">
+<p>Apresentação da empresa Castilho Móveis</p>
+<h2>Tecnologias</h2>
+
+<ul  class="tecnologias">
+  <li>Html5</li>
+  <li>Css</li>
+  <li>Jquery</li>
+  <li>Javascript</li>
+</ul>
+<h3>Link<a href="#"></a></h3>
+  </div>
+
+</div> 
+
+       </section> 
+ 
+ <h2 class="title">Desenvolvedor Junior  </h2><br>
+
+<section>
+ <div><h2>Front-end</h2>
+        <ul class="tecnologias">
+          <li>TypeScript</li>
+          <li>HTML5</li>
+          <li>CSS</li>
+          <li>Sass</li>
+          <li>ReactJS</li>
+        </ul>
+</div>
+<div  >
+        <h2>Back-end</h2>
+        <ul class="tecnologias">
+          <li>Node.js</li>
+          <li>MongoDB</li>
+          <li>SQLite</li>
+        </ul>
+      </div>
+
+<div>
+        <h2>Ferramentas</h2>
+        <ul class="tecnologias">
+          <li>Git</li>
+          <li>Postman</li>
+        </ul>
+      </div>
+
+</section>
+<h2 class="title">Rede sociais</h2>
+
+<nav>
+  <a href="https://www.linkedin.com/in/paulo-renato-630bb7227" 
+     class="links" 
+     target="_blank" 
+     rel="noopener noreferrer">
+    <i class="fa-brands fa-linkedin"></i>
+    LinkedIn
+  </a>
+
+  <a href="https://www.instagram.com/renato__ti/" 
+     class="links" 
+     target="_blank" 
+     rel="noopener noreferrer">
+    <i class="fa-brands fa-instagram"></i>
+    Instagram
+  </a>
+
+  <a href="https://github.com/Renato-Travassos" 
+     class="links" 
+     target="_blank" 
+     rel="noopener noreferrer">
+    <i class="fa-brands fa-github"></i>
+    GitHub
+  </a>
+</nav>
+  
     </main>
-
+  
 </body>
+
+
+<script>
+function Show(e) {
+e.textContent="Ver"  
+const card = e.parentElement;
+card.classList.toggle("selecionado");
+let texto =document.querySelector('.selecionado').children[2]
+texto.textContent="Sair";
+} 
+
+</script>
 </html>
